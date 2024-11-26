@@ -1,44 +1,37 @@
-# ✨ WizSearch
-Your intelligent ally for effortless data retrieval across documents and seamless browsing the web.
+# 🔍 InsightHub
+Your intelligent companion for seamless document analysis and web exploration.
 
 ## Demo 🎬
-1. Get your API key [groq](https://console.groq.com/keys)
-2. Checkout https://wizsearch.streamlit.app/
+1. Get your API key from [Groq](https://console.groq.com/keys)
+2. Visit https://insighthub.streamlit.app/
 
-[Quick start with Ollama in local 🦙✨](./docs/OLLAMA.md)
+[Quick start with local setup 🚀](./docs/LOCAL_SETUP.md)
 
-https://github.com/user-attachments/assets/fa4fae96-6e78-474d-9d90-2e1d64833008
+## Technology Stack 🛠️
+Built using cutting-edge components:
+- **AI Models:** Supports various models via [Groq](https://console.groq.com/docs/models), [OpenAI](https://platform.openai.com/docs/models), and [Azure OpenAI](https://azure.microsoft.com/products/ai-services/openai-service)
+- **Embeddings:** Using `sentence-transformers` and `BM25` via [FastEmbed](https://github.com/qdrant/fastembed)
+- **Search Engine:** [Tavily API](https://tavily.com/) for web search
+- **Vector Storage:** [Qdrant](https://qdrant.tech/) for document storage
+- **Analytics:** [Langfuse](https://www.langfuse.com/) for performance monitoring
+- **Interface:** [Streamlit](https://streamlit.io/) for the web interface
 
-## How we built it 🛠️
-We built Wiz Search using the following components:
-- **LLM/VLM:** Open source models like llama3.1, mistral, LLaVA, etc are supported by platforms such as [Ollama](https://ollama.ai/) and [Groq](https://console.groq.com/docs/models). Closed source models like gpt-4o, gpt-4 supported by [OpenAI](https://platform.openai.com/docs/models) and [Azure OpenAI](https://azure.microsoft.com/en-in/products/ai-services/openai-service) for natural language understanding and generation.
-- **Embeddings:** `jina-embeddings-v2-base-en` and `BM25` using [fastembed](https://github.com/qdrant/fastembed) to enhance search relevance.
-- **Intelligent Search:** [Tavily](https://tavily.com/) for advanced search capabilities.
-- **Vector Databases:** [Qdrant](https://qdrant.tech/) for efficient data storage and retrieval.
-- **Observability:** [Langfuse](https://www.langfuse.com/) for monitoring and observability.
-- **UI:** [Streamlit](https://streamlit.io/) for creating an interactive and user-friendly interface.
-
-![Architecture](./src/assets/arch.png)
+## Quick Start ⚙️
+1. Clone the repository
 
 ## Run The Application ⚙️
 1. Clone the repo
 ```
-git clone https://github.com/SSK-14/WizSearch.git
+git clone https://github.com/kakachia777/insight-Hub.git
 ```
 
 2. Installation and setup  
 ```
-bash setup.sh
+bash install.sh
 ```
 
 3. Running
 ```
-streamlit run app.py 
+streamlit run main.py 
 ```
-
-## Contributing 🤝
-Contributions to this project are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request on the project's GitHub repository.
-
-## License 📝
-This project is licensed under the [MIT License](https://github.com/SSK-14/WizSearch/blob/main/LICENSE). Feel free to use, modify, and distribute the code as per the terms of the license.
 

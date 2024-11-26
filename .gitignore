@@ -1,0 +1,13 @@
+bin/
+etc/
+include/
+lib/
+share/
+.vscode
+__pycache__/
+env
+venv
+temp
+.env
+secrets.toml
+Insight-Hub/
